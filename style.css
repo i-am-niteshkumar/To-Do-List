@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif , ;
+  }
+  body{
+    background-color: #d1e2af ;
+    padding: 50px;
+    margin: 50px; 
+    border-top:50px ;
+  }
+  #container {
+    width: 500px;
+    margin: 0 auto;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid #e5e5e5; */
+  }
+  ul li {
+    padding: 10px;
+    /* padding-left: 0; */
+    display: flex;
+    justify-content: space-between;
+    align-items: inherit;
+    align-items: center;
+  }
+  ul li:hover {
+    background: #f6efef;
+  }
+  #list input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  #list label {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  #list label:before {
+    content:'';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid #0a4e76;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  #list input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 9px;
+    width: 6px;
+    height: 14px;
+    border: solid #faf6f6;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  #list input:checked + label:before {
+    background: #0079bf;
+  } 
+  #list input:checked + label {
+    text-decoration: line-through;
+
+  }
+  .delete {
+    height: 38px;
+      padding:4px 4px;
+      border-radius: 4px;
+  }
+  .delete:hover {
+    background: #bf1c1c;
+    cursor: pointer;
+  }
+  h1 {
+    text-align: center;
+    color:#0079bf;
+    font-size: 40px ;
+  }
+
+  .add-task {
+      width: 100%;
+      outline: none;
+      font-size: 15px;
+      padding: 11px;
+      border: 2px solid #666262;
+      margin-top: 10px;
+      margin-bottom: 3px;
+      border-radius: 5px;
+  }
+  #total-tasks {
+    margin-bottom: 20px;
+    font-size: 13px;
+      margin-left: 2px;
+      color: gray;
+  }
